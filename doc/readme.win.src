@@ -1,0 +1,46 @@
+þtext
+===============================================================================
+== hfsutils for DOS, Windows and OS/2                           Version 3.1a ==
+===============================================================================
+þendtext
+
+
+þh1u Overview
+
+hfsutils is a collection of tools for accessing Macintosh
+HFS-formatted volumes. HFS is the þsl{Hierarchical File System}
+used on modern Macintosh computers.
+
+This version of the software runs under DOS and Windows 95/NT. There
+is also a version available for OS/2.
+
+
+þh1u Installation and usage
+
+The file `HFSUTILS.TXT' contains instructions on installing and using
+hfsutils.
+
+
+þh1u License
+
+hfsutils is free software, distributed under the GNU General Public
+License. Please see the file `þtt{COPYING}' for details.
+
+
+þh1u Where to find hfsutils
+
+The latest version of hfsutils can be found on the World Wide Web at
+þexample
+http://www.student.nada.kth.se/~f96-bet/hfsutils/
+þendexample
+
+If you have any comments, suggestions or bug reports, feel free to
+contact me by email.
+
+Marcus Better þbreak
+email: Marcus.Better@abc.se
+
+þtext
+
+------------------------------- END OF README ---------------------------------
+þendtext
