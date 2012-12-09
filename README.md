@@ -10,11 +10,11 @@ GNU GPL V2
 
 COMPILE TOOLS
 ==============
-- Marcus Better
+
 
 AUTHORS
 =============
-- Gary L. Robinson
+- Marcus Better
 
 LINKS
 =============
