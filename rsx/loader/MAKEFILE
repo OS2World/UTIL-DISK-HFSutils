@@ -1,0 +1,28 @@
+# Makefile for RSX 32bit loader
+
+# ASM = tasm.exe
+# AFLAGS = -mx -jlocals -dHAVE386 -w2
+
+CC = cl.exe
+ASM = ml.exe
+LINK = link.exe
+AFLAGS = -c -DHAVE386 -W3 -WX -Cp -nologo
+CFLAGS = -AS -Ox -Gs -W3
+
+all: loader.exe
+	@echo Make ready
+
+loader.exe : crt1.obj load2.obj loader.obj slibce.lib
+	link crt1.obj loader.obj,loader.exe,loader.map,slibce,NUL
+
+loader.obj: loader.c loader.h
+	$(CC) -c $(CFLAGS) loader.c
+
+load2.obj: load2.asm
+	$(ASM) $(AFLAGS) load2.asm
+
+crt1.obj: crt1.asm
+	$(ASM) $(AFLAGS) crt1.asm
+
+slibce.lib: load2.obj
+        lib slibce.lib -+load2.obj,,,,
